@@ -6,6 +6,44 @@
     <title>New Save</title>
 </head>
 <body>
-    
+    <h1>Create a new save file</h1>
+
+    <form>
+        
+        <div>
+            <label for="ChallengeType">Please select a challenge type:</label>
+
+            <label>Nuzlocke</label>
+            <input type="radio" name="ChallengeType" value="Nuzlocke">
+
+            <label>Soul link</label>
+            <input type="radio" name="ChallengeType" value="SoulLink">
+        </div>
+
+        <div>
+            <label for="version">Select a game version:</label>
+            <select id="version" name="version">
+                <option value="I">I</option>
+                <option value="II">II</option>
+                <option value="III">III</option>
+                <option value="IV">IV</option>
+                <option value="V">V</option>
+                <option value="VI">VI</option>
+                <option value="VII">VII</option>
+                <option value="VIII">VIII</option>
+                <option value="VIIII">VIIII</option>
+                <option value="Rom hack">Rom hack</option><br>
+            </select>
+        </div>
+
+        <div>
+            <label for="TrainerName">Trainer name:</label>
+            <input type="text" id="TrainerName"><br>
+
+            <label for="TrainerName">Partner name:</label>
+            <input type="text" id="PartnerName">
+        </div>
+
+    </form>
 </body>
 </html>
