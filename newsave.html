@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>New Save</title>
+    <script src="newsave.js" defer></script>
+    <link rel="stylesheet" href="newsave.css">  
 </head>
 <body>
     <h1>Create a new save file</h1>
@@ -13,15 +15,15 @@
         <div>
             <label for="ChallengeType">Please select a challenge type:</label>
 
+            <label>Soul link</label>
+            <input type="radio" name="ChallengeType" value="SoulLink" checked>
+
             <label>Nuzlocke</label>
             <input type="radio" name="ChallengeType" value="Nuzlocke">
-
-            <label>Soul link</label>
-            <input type="radio" name="ChallengeType" value="SoulLink">
         </div>
 
         <div>
-            <label for="version">Select a game version:</label>
+            <label for="version">Select a generation:</label>
             <select id="version" name="version">
                 <option value="I">I</option>
                 <option value="II">II</option>
@@ -39,9 +41,15 @@
         <div>
             <label for="TrainerName">Trainer name:</label>
             <input type="text" id="TrainerName"><br>
+        </div>
 
-            <label for="TrainerName">Partner name:</label>
+        <div id="PartnerContainer">
+            <label for="PartnerName">Partner name:</label>
             <input type="text" id="PartnerName">
+        </div>
+
+        <div>
+            <button type="submit">Submit</button>
         </div>
 
     </form>
